@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background-color: #000;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+/*-------------------STYLE HEADER------------------*/
+header{
+	text-align: center;
+	padding: 10px;
+}
+header > .menu{
+	width: 100%;
+	padding: 10px;
+	list-style-type: none;
+}
+header > .menu > li{
+	padding: 20px 0px;
+	display: inline-block;
+}
+header > .menu > li > a{
+	padding: 20px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+header > .menu > li:hover > a{
+	color: #e0a500;
+	border-bottom: 3px solid #e0a500;
+}
+
+/*-------------------STYLE FORM------------------*/
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.container > h1{
+	color: #fff;
+	border-bottom: 1px solid #e0a500;
+	padding: 20px;
+}
+.container > form{
+	width: 50%;
+	margin: 50px auto 0px auto;
+}
+.container > form > input:not(#photo), .container > form > textarea{
+	width: 100%;
+	padding: 7px;
+	margin: 10px;
+	background: none;
+	outline: none;
+	border: none;
+	border: 1px solid #e0a500;
+	color: #fff;
+}
+.container > form > input#photo{
+	width: 100%;
+	margin: 10px;
+	border: none;
+	outline: none;
+	color: #e0a500;
+}
+.container > form > input:focus, .container > form > textarea:focus{
+	border: none;
+	border-bottom: 2px solid #e0a500;
+}
+.container > form > label{
+	color: #fff;
+	margin: 10px;
+	float: left;
+	font-size: 20px;
+}
+.container > form > button{
+	border: none;
+	outline: none;
+	background-color: #e0a500;
+	width: 30%;
+	margin: 10px;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 20px;
+	float: left;
+	opacity: 0.5;
+}
+.container > form > button:hover{
+	transition: 1s;
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+/*-------------------STYLE PHOTOS------------------*/
+
+.container > .row{
+	margin-top: 50px;
+}
+.container > .row > .picture{
+	padding: 10px;
+	margin: 20px auto;
+	height: 300px;
+}
+.container > .row > .picture > img{
+	width: 100%;
+}
+.container > .row > .picture > h3{
+	color: #e0a500;
+	padding: 10px;
+	letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
+}
+.container > .row > .picture > p{
+	color: #fff;
+	text-align: justify;
+	font-family: Arial, sans-serif;
+}
+
+/*-------------------STYLE FOOTER------------------*/
+
+footer{
+	width: 100%;
+	padding: 50px 20px 20px 20px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+footer > p > strong{
+	color: #e0a500;
+}
